@@ -92,9 +92,15 @@ body p {
 #links a {
   text-decoration: none;
   color: white;
-  letter-spacing: 1px;
   font-size: 18px;
   font-variant: normal;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  font-family: sans-serif;
+}
+
+#links a:hover {
+  color: aqua;
 }
 
 @media screen and (max-width: 730px) {
