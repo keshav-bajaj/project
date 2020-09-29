@@ -1,0 +1,100 @@
+html{
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+#col-name:focus{
+    outline: none;
+    text-decoration: none;
+}
+#ran-btn{
+    background-color: rebeccapurple;
+    border: none;
+    transition: all 0.6s;
+    padding: 15px;
+    width:200px;
+    font-size: 25px;
+    color:white;
+    box-shadow: -1px 4px 30px -6px rgba(0,0,0,0.75);
+    cursor: pointer;
+    margin:0px 20px 0px 20px;
+}
+#ran-btn:hover{
+    background-color: royalblue;;
+}
+#ran-btn:focus{
+    outline: none;
+}
+#ran-btn:active{
+    background-color: grey;
+}
+#col-name{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 15px;
+    background-color: white;
+    border: none;
+    font-size:22px;
+    box-shadow: -1px 4px 30px -6px rgba(0,0,0,0.75);
+    background-color: violet;
+}
+#copy-btn{
+    padding:15px;
+    width:200px;
+    font-size: 20px;
+    box-shadow: -1px 4px 30px -6px rgba(0,0,0,0.75);
+    cursor: pointer;
+    border:none;
+    background-color: rebeccapurple;
+    color:white;
+    transition: all 0.6s;
+}
+#copy-btn:focus{
+    outline:none;
+}
+#copy-btn:hover{
+    background-color: royalblue;
+}
+body{
+    font-variant: small-caps;
+    p{
+      font-size:28px;
+    }
+} 
+#links{
+    background-color: blue;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left:0;
+    padding:12px;
+    box-shadow: -1px 4px 30px -6px rgba(0,0,0,0.75);
+    a{
+        text-decoration: none;
+        color:white;
+        letter-spacing: 1px;
+        font-size: 18px;
+        font-variant: normal;
+    }
+}
+@media screen and (max-width:730px) {
+    body{
+        p{
+            font-size:24px;
+        }
+    }
+}
+@media screen and (max-width:615px) {
+    body{
+        p{
+            font-size:22px;
+        }
+    }
+}
+@media screen and (max-width:565px) {
+    body{
+        p{
+            font-size:18px;
+        }
+    }
+}
