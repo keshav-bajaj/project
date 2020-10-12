@@ -1,7 +1,5 @@
 #Hello
 
-#See my projects here-
-
 > Color Flipper
  * Changes color on click.
  * A simple Javascript Project .
