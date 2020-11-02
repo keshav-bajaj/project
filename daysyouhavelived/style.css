@@ -1,0 +1,116 @@
+#clock {
+  font-family: monospace;
+  font-variant: small-caps;
+}
+
+#main-container {
+  width: 350px;
+  background-color: #2e104f;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 50px;
+  text-align: center;
+  display: inline-block;
+  margin-top: 80px;
+  border-radius: 5%;
+}
+
+html {
+  background-color: rebeccapurple;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  font-family: rockwell;
+}
+
+#time {
+  color: #ff7b00;
+  background-color: #b33de9;
+  padding: 15px;
+  font-size: 30px;
+  font-family: monospace;
+}
+
+#main-form {
+  padding-top: 40px;
+  color: white;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#main-form #date {
+  font-size: 16px;
+}
+
+#main-form #date-label {
+  font-size: 16px;
+}
+
+#btn {
+  background-color: yellow;
+  outline: none;
+  border: none;
+  padding: 20px;
+  width: 300px;
+  border-radius: 1%;
+  font-size: 20px;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+#reset {
+  background-color: yellow;
+  outline: none;
+  border: none;
+  padding: 20px;
+  width: 300px;
+  border-radius: 1%;
+  font-size: 20px;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+#btn:hover {
+  color: white;
+  background-color: blue;
+  cursor: pointer;
+}
+
+#btn:active {
+  color: white;
+  background-color: blue;
+  cursor: pointer;
+  outline: 2px solid yellow;
+}
+
+#reset:hover {
+  color: white;
+  background-color: blue;
+  cursor: pointer;
+}
+
+#reset:active {
+  color: white;
+  background-color: blue;
+  cursor: pointer;
+  outline: 2px solid yellow;
+}
+
+.change {
+  display: none;
+}
+
+#head-link {
+  text-decoration: none;
+  color: orange;
+}
+
+#you-box {
+  font-size: 22px;
+  color: yellow;
+  margin-bottom: 10px;
+  display: none;
+}
+/*# sourceMappingURL=style.css.map */
