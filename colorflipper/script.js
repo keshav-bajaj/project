@@ -7,7 +7,8 @@ function generatecolor() {
     var red = Math.floor((Math.random() * 255) + 1); 
     var green = Math.floor((Math.random() * 255) + 1);
     var blue = Math.floor((Math.random() * 255) + 1);
-    var color =  "rgb" + "(" + red + "," + green + "," + blue + ")";
+    var alpha = (Math.random()).toFixed(2);
+    var color =  "rgba" + "(" + red + "," + green + "," + blue + "," + alpha + ")";
     colorbox.value = color;
     document.body.style.backgroundColor = color;
 };

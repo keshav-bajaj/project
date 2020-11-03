@@ -9,7 +9,7 @@ document.body.appendChild(heading);
 
 var headlink = document.createElement("a");
 headlink.setAttribute("id" , "head-link");
-headlink.setAttribute("href" , "https://github.com/keshav-bajaj")
+headlink.setAttribute("href" , "https://keshav-bajaj.github.io/")
 headlink.setAttribute("target" , "__blank")
 document.body.appendChild(headlink);
 
