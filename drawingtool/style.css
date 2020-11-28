@@ -10,7 +10,7 @@ body {
 canvas {
   border: 2px solid #333;
   background: white;
-  cursor: url("./unnamed.png");
+  cursor: none;
 }
 
 .on {
@@ -41,5 +41,25 @@ button {
       -ms-flex-align: center;
           align-items: center;
   padding: 0px 10px 0px 10px;
+}
+
+#cursor {
+  opacity: 0;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  pointer-events: none;
+  border-radius: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transition-property: background,opacity;
+  transition-property: background,opacity;
+  z-index: 9999999999;
+}
+
+.eraser-cursor {
+  border: 2px solid black;
 }
 /*# sourceMappingURL=style.css.map */

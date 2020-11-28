@@ -2,6 +2,7 @@ window.addEventListener("load", () => {
     if (window.innerWidth <= 500){
         document.body.innerHTML = "This app is not optimised for small screens";
     } else {
+    const cursor = document.getElementById("cursor");
     const tools = document.getElementById("tools");
     const colorbox = document.getElementById("color");
     const pensize = document.getElementById("size");
@@ -63,19 +64,37 @@ window.addEventListener("load", () => {
         ctx.beginPath();
         ctx.moveTo(e.clientX,e.clientY);
     }
-
+    function cursorchange(e){
+        cursor.style.background = getcolor();
+        cursor.style.width = getsize() + "px";
+        cursor.style.height = getsize() + "px";
+        cursor.style.top = e.pageY + "px";
+        cursor.style.left = e.pageX + "px";
+    }
+    function checkcursor(){
+        canvas.addEventListener("mouseover" , ()=>{
+            cursor.style.opacity = 1;
+        })
+        canvas.addEventListener("mouseout" , () =>{
+            cursor.style.opacity = 0;
+        })
+        if(erase.classList.contains("on")){
+            cursor.classList.add("eraser-cursor");
+        } else {
+            cursor.classList.remove("eraser-cursor");
+        }
+    }
     canvas.addEventListener("mousedown" , startposition);
     canvas.addEventListener("mouseup" , endposition);
     canvas.addEventListener("mousemove" , draw);
     erase.addEventListener("click" , eraser);
+    window.addEventListener("mousemove" , cursorchange);
     clear.addEventListener("click" ,  () =>{
         ctx.clearRect(0,0,window.innerWidth,window.innerHeight);
     })
-
+    setInterval(checkcursor , 1);
     setInterval(()=>{
         canvas.style.background = canvasback.value;
     } ,1);
  };
 });
-
-
