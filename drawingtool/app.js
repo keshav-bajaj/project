@@ -1,4 +1,8 @@
 window.addEventListener("load", () => {
+    if (window.innerWidth <= 500){
+        document.body.innerHTML = "This app is not optimised for small screens";
+    } else {
+    const tools = document.getElementById("tools");
     const colorbox = document.getElementById("color");
     const pensize = document.getElementById("size");
     const erase = document.getElementById("erase");
@@ -7,9 +11,11 @@ window.addEventListener("load", () => {
     const canvas = document.getElementById("canvasd");
     const ctx = canvas.getContext("2d");
     const canvasback = document.getElementById("back-col");
-    canvasback.value = "white";
-    canvas.height = window.innerHeight/1.1;
+    canvasback.value = "#ffffff";
+    canvas.height = window.innerHeight/1.2;
     canvas.width = window.innerWidth;
+    tools.style.height = window.innerHeight - canvas.height;
+    tools.style.width = "100%";
 
     let painting = false;
     
@@ -69,6 +75,7 @@ window.addEventListener("load", () => {
     setInterval(()=>{
         canvas.style.background = canvasback.value;
     } ,1);
+ };
 });
 
 

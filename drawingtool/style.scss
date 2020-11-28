@@ -1,0 +1,33 @@
+body{
+    margin:0px;
+}
+*{
+    box-sizing: border-box;
+}
+
+canvas{
+    border:2px solid #333;
+    background:white;
+    cursor: url("./unnamed.png");
+}
+.on{
+    background-color: red;
+}
+.off{
+    background-color: yellow;
+}
+button{
+    outline:none;
+    border:none;
+    padding:10px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+#tools{
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0px 10px 0px 10px;
+}
