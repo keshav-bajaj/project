@@ -69,7 +69,7 @@ window.addEventListener("load", () => {
         cursor.style.width = getsize() + "px";
         cursor.style.height = getsize() + "px";
         cursor.style.top = e.pageY + "px";
-        cursor.style.left = e.pageX + "px";
+        cursor.style.left = e.pageX + "px";   
     }
     function checkcursor(){
         canvas.addEventListener("mouseover" , ()=>{
