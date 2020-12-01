@@ -1,0 +1,79 @@
+html{
+    font-family: 'Sansita Swashed', cursive !important;
+    overflow: hidden;
+    background-color: black;
+}
+body{
+    margin:0;
+    color: white !important;
+}
+#timer{
+    text-align: center;
+    pointer-events: none;
+}
+#score{
+    text-align: center;
+}
+#cat{
+    opacity: 0;
+    position: absolute;
+}
+.appear{
+    pointer-events: none;
+    animation: appear 2.3s ease forwards;
+}
+@keyframes appear{
+    from{
+        opacity: 0;
+    } to{
+        transform: rotate(0deg);
+        opacity: 1;
+        top:40%;
+        left:50%;
+    }
+}
+
+#game-div{
+    display: none;
+}
+
+#start-div{
+    display: none;
+    h1{
+        font-size:31px;
+    }
+    h2{
+        font-size: 27px;
+    }
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    ul{
+        font-size:20px;
+        list-style-type:none;
+    }
+    button{
+        width:150px;
+        padding: 7px;
+        font-size:20px;
+        border:none;
+        outline:none;
+        cursor: pointer;
+        background-color: wheat;
+    }
+}
+
+#end-game{
+    font-size:27px;
+    text-align:center;
+    button{
+        margin-top:20px;
+        width:150px;
+        padding: 7px;
+        font-size:20px;
+        border:none;
+        outline:none;
+        cursor: pointer;
+        background-color: wheat;
+    }
+}
